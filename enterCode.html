@@ -30,17 +30,19 @@ with their friends/people who shared the code -->
     <script>
         const validCodes = ["GYM123", "DRAFT456"];
 
-        document.getElementById("submitCode").addEventListener("click", function(e)) {
+        document.getElementById("submitCode").addEventListener ("click", function(e){
             e.preventDefault();
 
             const code=document.getElementById("enterCode").value;
             
-        }
+        
         if(validCodes.includes(code)){
             window.location.href= "codeEnterSheet.html";
         }else{
             alert("Invalid code. Please try again or create a new draft.")
-        };
+        }
+    }
+    );
     </script>
 
   </body>
