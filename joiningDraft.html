@@ -30,7 +30,7 @@
   </div>
   <div class="mb-3">
     <label for="time" class="block mb-3 text-sm font-medium text-gray-900 dark:text-white">How often should they get a reminder? </label>
-    <input type="text" id="time" style="width: 100px;" pattern="[0-9]{2}:[0-9]{2}"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 block mx-auto" placeholder="ex: 00:00" required/>
+    <input type="text" id="time2" style="width: 100px;" pattern="[0-9]{2}:[0-9]{2}"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 block mx-auto" placeholder="ex: 00:00" required/>
   </div>
   <!--how should the players be notififed-->
   
@@ -76,6 +76,41 @@
     });
   });
 </script>
+<script>
+
+  let selectedNotif = "";
+
+  //working with drop down menu different that others
+  document.querySelectorAll('#dropdown a').forEach(item => {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+      selectedNotification = this.textContent;
+      document.getElementById('dropdownDefaultButton').textContent = selectedNotification;
+      document.getElementById('dropdown').classList.add('hidden');
+    });
+  });
+
+  //working with the form submission similar to beofre 
+
+
+  document.querySelector("form").addEventListener("submit",function(e){
+    e.preventDefault();
+
+
+      const people=document.getElementById("number").value;
+      const gymnas=document.getElementById("number2").value;
+      const time=document.getElementById("time").value;
+      const remind=document.getElementById("time2").value;
+      //const gencode=document.getElementById("number2").value;
+
+      //logging the temp values 
+      console.log("People:", people);
+      console.log("Gymnast:", gymnas);
+      console.log("Time per turn:", time);
+      console.log("Reminder interval:", remind);
+      console.log("Notification method:", selectedNotif);
+  });
+  </script>
 
 
   </body>
