@@ -84,7 +84,7 @@
   document.querySelectorAll('#dropdown a').forEach(item => {
     item.addEventListener('click', function (e) {
       e.preventDefault();
-      selectedNotification = this.textContent;
+      selectedNotif = this.textContent;
       document.getElementById('dropdownDefaultButton').textContent = selectedNotification;
       document.getElementById('dropdown').classList.add('hidden');
     });
