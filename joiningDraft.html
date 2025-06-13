@@ -85,7 +85,7 @@
     item.addEventListener('click', function (e) {
       e.preventDefault();
       selectedNotif = this.textContent;
-      document.getElementById('dropdownDefaultButton').textContent = selectedNotif;
+      document.getElementById('dropdownDefaultButton').textContent = selectedNotifi;
       document.getElementById('dropdown').classList.add('hidden');
     });
   });
@@ -109,9 +109,12 @@
       console.log("Time per turn:", time);
       console.log("Reminder interval:", remind);
       console.log("Notification method:", selectedNotif);
+
+      document.querySelector("form").reset(); //to reset after submit
+      document.getElementById('dropdownDefaultButton').textContent="Select method";
+      selectedNotif="";
   });
   </script>
-
 
   </body>
 </html>
