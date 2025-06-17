@@ -10,5 +10,10 @@ function test(){
     //alert(numPpl + gymDraft + timeTurn + timeReminder + notiF);
 
     //storing data local
+    var ppl= localStorage.setItem("numPpl", numPpl);
+    var gym= localStorage.setItem("gymDraft", gymDraft);
+    var turn= localStorage.setItem("timeTurn", timeTurn);
+    var rem= localStorage.setItem("timeReminder", timeReminder);
+    var not= localStorage.setItem("notiF", notiF);
 }
 
