@@ -15,5 +15,10 @@ function test(){
     var turn= localStorage.setItem("timeTurn", timeTurn);
     var rem= localStorage.setItem("timeReminder", timeReminder);
     var not= localStorage.setItem("notiF", notiF);
-}
 
+    //gonna generate a random code to be stored and shared
+
+    var uuid =crypto.randomUUID();// generate a random uuid
+
+    var uniq=localStorage.setItem("uniqCode", uuid);
+}
