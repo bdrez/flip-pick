@@ -18,7 +18,12 @@ function test(){
 
     //gonna generate a random code to be stored and shared
 
-    var uuid =crypto.randomUUID();// generate a random uuid
+    var uuid =crypto.randomUUID().replaceAll("-", "");// generate a random uuid
+
+    //to splie and get unique id to use as code for user to share
+    //let uuid = crypto.randomUUID().replaceAll("-", "").slice(0, 12);
+    //or make it a link they can share
+
 
     var uniq=localStorage.setItem("uniqCode", uuid);
 }
