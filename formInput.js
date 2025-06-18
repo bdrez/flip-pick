@@ -1,11 +1,11 @@
 function test(){
     //retrive data
-    var numPpl = document.getElementById("number").value;
+    const numPpl = document.getElementById("number").value;
     //alert(numPpl);//make the alert say something ligit
-    var gymDraft=document.getElementById("number2").value;
-    var timeTurn=document.getElementById("time").value;
-    var timeReminder=document.getElementById("time2").value;
-    var notiF=document.getElementById("dropdown").value;
+    const gymDraft=document.getElementById("number2").value;
+    const timeTurn=document.getElementById("time").value;
+    const timeReminder=document.getElementById("time2").value;
+    const notiF=document.getElementById("dropdown").value;
 
     //alert(numPpl + gymDraft + timeTurn + timeReminder + notiF);
 
@@ -18,7 +18,7 @@ function test(){
 
     //gonna generate a random code to be stored and shared
 
-    var uuid =crypto.randomUUID().replaceAll("-", "");// generate a random uuid
+    const code =crypto.randomUUID().replaceAll("-", "");// generate a random uuid
 
     //to splie and get unique id to use as code for user to share
     //let uuid = crypto.randomUUID().replaceAll("-", "").slice(0, 12);
@@ -26,4 +26,7 @@ function test(){
 
 
     var uniq=localStorage.setItem("uniqCode", uuid);
+
+
+
 }
