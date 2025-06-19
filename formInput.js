@@ -32,7 +32,8 @@ function test(){
 
     localStorage.setItem(code, JSON.stringify(draftData));
 
-    window.location.href= 'codeEnterSheet.html?code=${code}';
+    window.location.href = `codeEnterSheet.html?code=${code}`;
+
 
     //to splie and get unique id to use as code for user to share
     //let uuid = crypto.randomUUID().replaceAll("-", "").slice(0, 12);
@@ -43,3 +44,4 @@ document.querySelector('form').addEventListener("submit", function(e){
     e.preventDefault();
     test();
 });
+
