@@ -12,7 +12,7 @@ function test(){
 
     const code =crypto.randomUUID().replaceAll("-", "");// generate a random uuid
 
-    const uuid=localStorage.setItem("uniqCode", code);
+    //const uuid=localStorage.setItem("uniqCode", code);
 
     /*/storing data local
     gonna make one whole thing 
@@ -23,6 +23,7 @@ function test(){
     const not= localStorage.setItem("notiF", notiF);*/
 
     const draftData={ //same name for short form
+        code,
         numPpl,
         gymDraft,
         timeTurn,
@@ -44,4 +45,5 @@ document.querySelector('form').addEventListener("submit", function(e){
     e.preventDefault();
     test();
 });
+
 
