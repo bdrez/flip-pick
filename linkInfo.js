@@ -1,1 +1,1 @@
-console.log(window.localStorage.getItem('draftee'));
+console.log(JSON.parse(window.localStorage.getItem('draftee')));
