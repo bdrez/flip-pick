@@ -31,7 +31,7 @@ function test(){
         notiF
     };
 
-    localStorage.setItem("user, JSON.stringify(draftData));
+    localStorage.setItem("draftee", JSON.stringify(draftData));
 
     window.location.href = `codeEnterSheet.html?code=${code}`;
 
