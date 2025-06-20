@@ -1,3 +1,10 @@
-console.log(JSON.parse(window.localStorage.getItem('draftee')));
-//later potentially save all - this overwrite only stores current one
-const drat= JSON.parse(localStorage.getItem('person')) || [];
+
+const data=JSON.parse(localStorage.getItem("draftee"));
+if (data) {
+  document.getElementById("codeDisplay").textContent = ` ${data.code}`;
+  document.getElementById("playersInfo").textContent = ` ${data.numPpl}`;
+  document.getElementById("timeTurnInfo").textContent = ` ${data.timeTurn}`;
+  document.getElementById("reminderInfo").textContent = ` ${data.timeReminder}`;
+  document.getElementById("notificationInfo").textContent = `Notify by: ${data.notiF}`;\
+  
+}
