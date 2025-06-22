@@ -5,6 +5,6 @@ if (data) {
   document.getElementById("playersInfo").textContent = ` ${data.numPpl}`;
   document.getElementById("timeTurnInfo").textContent = ` ${data.timeTurn}`;
   document.getElementById("reminderInfo").textContent = ` ${data.timeReminder}`;
-  document.getElementById("notificationInfo").textContent = `Notify by: ${data.notiF}`;\
+  document.getElementById("notificationInfo").textContent = `Notify by: ${data.notiF}`;
   
 }
