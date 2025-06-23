@@ -12,6 +12,12 @@ function test(){
     //convert both hours to minutes 
     const turnMinutes = (parseInt(timeTurnHour) ) * 60 + (parseInt(timeTurnMin));
     const reminderMinutes = (parseInt(timeReminderHour)) * 60 + (parseInt(timeReminderMin));
+
+    //making sure the reminer isnt longer than the time allocated for the turn 
+    if (reminderMinutes > turnMinutes) {
+       alert("Reminder time cannot be greater than the turn time.");
+         return; // stop the form from submitting
+        }
     //alert(numPpl + gymDraft + timeTurn + timeReminder + notiF);
     //gonna generate a random code to be stored and shared
 
@@ -43,4 +49,3 @@ document.querySelector('form').addEventListener("submit", function(e){
     e.preventDefault();
     test();
 });
-
