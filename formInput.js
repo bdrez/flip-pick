@@ -4,11 +4,14 @@ function test(){
     //alert(numPpl);//make the alert say something ligit
     const gymDraft=document.getElementById("number2").value;
     const timeTurnHour=document.getElementById("hoursDropdown").value;
-     const timeTurnMin=document.getElementById("minutesDropdown").value;
+    const timeTurnMin=document.getElementById("minutesDropdown").value;
     const timeReminderHour=document.getElementById("houDropdown").value;
     const timeReminderMin=document.getElementById("minDropdown").value;
     const notiF=document.getElementById("dropdownDefaultButton").textContent;
 
+    //convert both hours to minutes 
+    const turnMinutes = (parseInt(timeTurnHour) ) * 60 + (parseInt(timeTurnMin));
+    const reminderMinutes = (parseInt(timeReminderHour)) * 60 + (parseInt(timeReminderMin));
     //alert(numPpl + gymDraft + timeTurn + timeReminder + notiF);
     //gonna generate a random code to be stored and shared
 
@@ -40,5 +43,4 @@ document.querySelector('form').addEventListener("submit", function(e){
     e.preventDefault();
     test();
 });
-
 
