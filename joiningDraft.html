@@ -31,7 +31,7 @@
   </label>
   <div class="flex space-x-4 justify-start w-full">
     <!-- Hours Dropdown -->
-    <select id="hoursDropdown" class="text-gray-700 bg-white hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+    <select id="hoursDropdown" required class="text-gray-700 bg-white hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
       <option disabled selected>Hours</option>
       <script>
         for (let i = 1; i <= 24; i++) {
@@ -41,7 +41,7 @@
     </select>
 
     <!-- Minutes Dropdown -->
-    <select id="minutesDropdown" class="text-gray-700 bg-white hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+    <select id="minutesDropdown" required  class="text-gray-700 bg-white hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
       <option disabled selected>Minutes</option>
       <script>
         for (let i = 5; i <= 60; i += 5) {
@@ -65,7 +65,7 @@
   </label>
   <div class="flex space-x-4">
     <!-- Hours Dropdown -->
-    <select id="houDropdown" class="text-gray-700 bg-white hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+    <select id="houDropdown" required class="text-gray-700 bg-white hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
       <option disabled selected>Hours</option>
       <script>
         for (let i = 1; i <= 24; i++) {
@@ -75,7 +75,7 @@
     </select>
 
     <!-- Minutes Dropdown -->
-    <select id="minDropdown" class="text-gray-700 bg-white hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+    <select id="minDropdown" required class="text-gray-700 bg-white hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
       <option disabled selected>Minutes</option>
       <script>
         for (let i = 5; i <= 60; i += 5) {
