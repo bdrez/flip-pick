@@ -30,9 +30,9 @@
     How long should each turn be?
   </label>
   <div class="flex space-x-4 justify-start w-full">
-    <!-- Hours Dropdown -->
+    <!-- Hours  -->
     <select id="hoursDropdown" required class="text-gray-700 bg-white hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-      <option disabled selected>Hours</option>
+      <option value="" disabled selected>Hours</option>
       <script>
         for (let i = 1; i <= 24; i++) {
           document.write(`<option value="${i}">${i}</option>`);
@@ -40,11 +40,11 @@
       </script>
     </select>
 
-    <!-- Minutes Dropdown -->
+    <!-- Minutes  -->
     <select id="minutesDropdown" required  class="text-gray-700 bg-white hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-      <option disabled selected>Minutes</option>
+      <option value="" disabled selected>Minutes</option>
       <script>
-        for (let i = 5; i <= 60; i += 5) {
+        for (let i = 0; i <= 55; i += 5) {
           document.write(`<option value="${i}">${i}</option>`);
         }
       </script>
@@ -66,7 +66,7 @@
   <div class="flex space-x-4">
     <!-- Hours Dropdown -->
     <select id="houDropdown" required class="text-gray-700 bg-white hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-      <option disabled selected>Hours</option>
+      <option value=""  disabled selected>Hours</option>
       <script>
         for (let i = 1; i <= 24; i++) {
           document.write(`<option value="${i}">${i}</option>`);
@@ -76,9 +76,9 @@
 
     <!-- Minutes Dropdown -->
     <select id="minDropdown" required class="text-gray-700 bg-white hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-      <option disabled selected>Minutes</option>
+      <option value=""  disabled selected>Minutes</option>
       <script>
-        for (let i = 5; i <= 60; i += 5) {
+        for (let i = 0; i <= 55; i += 5) {
           document.write(`<option value="${i}">${i}</option>`);
         }
       </script>
