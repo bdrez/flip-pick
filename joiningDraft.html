@@ -29,7 +29,7 @@
   <label class="block mb-2 text-sm font-medium text-gray-900">
     How long should each turn be?
   </label>
-  <div class="flex space-x-4">
+  <div class="flex space-x-4 justify-start w-full">
     <!-- Hours Dropdown -->
     <select id="hoursDropdown" class="text-gray-700 bg-white hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
       <option disabled selected>Hours</option>
@@ -58,25 +58,14 @@
     <input type="text" id="time" style="width: 100px;" pattern="[0-9]{2}:[0-9]{2}"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 block mx-auto" placeholder="ex: 00:00" required/>
   </div-->
   
-  
-<div id="dropdow" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-gray-700">
-    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">email</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">text</a>
-      </li>
-    </ul>
-</div>
 
 <div id="time2" class="mb-4">
   <label class="block mb-2 text-sm font-medium text-gray-900">
-    How offten should they get a reminder?
+    How often should they get a reminder?
   </label>
   <div class="flex space-x-4">
     <!-- Hours Dropdown -->
-    <select id="hoursDropdown" class="text-gray-700 bg-white hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+    <select id="houDropdown" class="text-gray-700 bg-white hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
       <option disabled selected>Hours</option>
       <script>
         for (let i = 1; i <= 24; i++) {
@@ -86,7 +75,7 @@
     </select>
 
     <!-- Minutes Dropdown -->
-    <select id="minutesDropdown" class="text-gray-700 bg-white hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+    <select id="minDropdown" class="text-gray-700 bg-white hover:bg-violet-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
       <option disabled selected>Minutes</option>
       <script>
         for (let i = 5; i <= 60; i += 5) {
